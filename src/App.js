@@ -1,9 +1,12 @@
+import { useMemo } from "react";
 import "./App.css";
 
 const Grid = () => {
-    const cells = Array.from({ length: 6400 }, (_, index) => (
-        <div key={index} className="cell" />
-    ));
+    const cells = useMemo(() => {
+        return Array.from({ length: 10000 }, (_, index) => (
+            <div key={index} className="cell" />
+        ));
+    }, []);
 
     return <div className="grid">{cells}</div>;
 };
