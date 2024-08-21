@@ -22,3 +22,10 @@
     border: 0.5px solid lightgrey;
     /* box-sizing: border-box; */
 }
+
+.colored-cell {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border: 0.5px solid lightgrey;
+}
